@@ -1,0 +1,88 @@
+{
+    "name": "CameraController",
+    "maps": [
+        {
+            "name": "CameraController",
+            "id": "560aaec5-d6b7-408c-84a9-0a12b3f2072c",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "8e298c75-aaeb-4970-95f5-69e15f0de3fe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MovementX",
+                    "type": "PassThrough",
+                    "id": "50a112e2-d41f-4b25-a86c-bb4adb72b815",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MovementY",
+                    "type": "PassThrough",
+                    "id": "92da0c4f-ecfa-4b28-b178-0761fd09e41a",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "820188b4-cbcf-4326-9b5a-80214b8e27e9",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bc0a0145-94be-4bf7-8a97-9ac5be04b436",
+                    "path": "<Mouse>/delta/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovementX",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb1a889d-5d93-4d9f-bf47-7d5aa48940e4",
+                    "path": "<Mouse>/delta/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovementY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "New control scheme",
+            "bindingGroup": "New control scheme",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
